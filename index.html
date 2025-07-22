@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevChallenges.io - Meet the Team Section" >
+
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.ico">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --text-heading: 2.5rem;
+            --text-label: 1.25rem;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Outfit, sans-serif;
+        }
+
+        .outer-container {
+            padding: 1.5rem 1rem;
+        }
+        
+        header {
+            padding: 3rem;
+            background-color: #F3F4F6;
+            min-height: 230px;
+            position: relative;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .background-decor {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        header > main {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            position: relative;
+            z-index: 1;
+            font-weight: 500;
+        }
+        
+        header > main > p:first-child {
+            color: #263FA9;
+        }
+
+        header > main > p:last-child {
+            color: #394150;
+        }
+        
+        header > main > h1 {
+            font-size: var(--text-heading);
+            font-weight: 500;
+        }
+
+        /* team */
+        figure {
+            position: relative;
+            color: #FFFEFE;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+        
+        figure .person {
+            max-width: 300px;
+            width: 100%;
+        }
+
+        figure .gradient {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }
+        
+        figure figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+        }
+        figure figcaption h4 {
+            font-size: var(--text-label);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+
+        
+        .person-1 { background-color: #C1B6F8; }
+        .person-2 { background-color: #EDACD2; }
+        .person-3 { background-color: #9DC4F8; }
+        .person-4 { background-color: #F8D8B0; }
+        .person-5 { background-color: #86E7D4; }
+        /* team end */
+        
+        footer {
+            background-color: #F3F4F6;
+            min-height: 250px;
+            display: flex;
+            align-items: end;
+            padding: 3rem;
+            color: #394150;
+            font-weight: 500;
+            border-radius: 0 0 20px 20px;
+        }
+        
+    </style>
+    
+    <title>Our Team</title>
+</head>
+<body>
+    <section class="outer-container">
+        <section class="content-container">
+            <header>
+                <div>
+                    <img src="./resources/Background_decor.svg" alt="background-decor" class="background-decor">
+                </div>
+                <main>
+                    <p>Our Team</p>
+                    <h1>Meet the brain</h1>
+                    <p>We are proud to have them as part of our community and look forward to continuing to push the boundaries of what's possible in the world of digital art.</p>
+                </main>
+            </header>
+            <figure class="person-1">
+                <img src="./resources/person_1.png" alt="person_1" class="person">
+                <img src="./resources/Gradient.svg" alt="gradient" class="gradient" >
+                <figcaption>
+                    <h4>Liam Novak</h4>
+                    <p>Software Engineer</p>
+                </figcaption>
+            </figure>
+            <figure class="person-2">
+                <img src="./resources/person_2.png" alt="person_2" class="person">
+                <img src="./resources/Gradient.svg" alt="gradient" class="gradient" >
+                <figcaption>
+                    <h4>Sophia Moretti</h4>
+                    <p>Business Development Manager</p>
+                </figcaption>
+            </figure>
+            <figure class="person-3">
+                <img src="./resources/person_3.png" alt="person_3" class="person">
+                <img src="./resources/Gradient.svg" alt="gradient" class="gradient" >
+                <figcaption>
+                    <h4>Ethan ROssi</h4>
+                    <p>Business Development Manager</p>
+                </figcaption>
+            </figure>
+            <figure class="person-4">
+                <img src="./resources/person_4.png" alt="person_4" class="person">
+                <img src="./resources/Gradient.svg" alt="gradient" class="gradient" >
+                <figcaption>
+                    <h4>Isabella Ricci</h4>
+                    <p>UX Designer</p>
+                </figcaption>
+            </figure>
+            <figure class="person-5">
+                <img src="./resources/person_5.png" alt="person_5" class="person">
+                <img src="./resources/Gradient.svg" alt="gradient" class="gradient" >
+                <figcaption>
+                    <h4>Noah Conti</h4>
+                    <p>Content Creator</p>
+                </figcaption>
+            </figure>
+            <footer>
+                <p>See all members</p>
+            </footer>
+        </section>
+    </section>
+</body>
+</html>
