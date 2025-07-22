@@ -30,6 +30,17 @@
 
         .outer-container {
             padding: 1.5rem 1rem;
+            display: flex;
+            align-items: center;
+            min-height: 100dvh;
+        }
+        
+        .content-container {
+            border-radius: 20px;
+            overflow: hidden;
+            display: grid;
+            max-width: 1280px;
+            margin: 0 auto;
         }
         
         header {
@@ -37,7 +48,6 @@
             background-color: #F3F4F6;
             min-height: 230px;
             position: relative;
-            border-radius: 20px 20px 0 0;
         }
 
         .background-decor {
@@ -106,8 +116,6 @@
             margin-bottom: 0.5rem;
         }
 
-
-        
         .person-1 { background-color: #C1B6F8; }
         .person-2 { background-color: #EDACD2; }
         .person-3 { background-color: #9DC4F8; }
@@ -123,9 +131,44 @@
             padding: 3rem;
             color: #394150;
             font-weight: 500;
-            border-radius: 0 0 20px 20px;
         }
         
+        footer .see-all-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        @media screen and (min-width: 640px) {
+            header {grid-area: header;}
+            .person-1 {grid-area: person1;}
+            .person-2 {grid-area: person2;}
+            .person-3 {grid-area: person3;}
+            .person-4 {grid-area: person4;}
+            .person-5 {grid-area: person5;}
+            footer {grid-area: footer;}
+
+            .outer-container {
+                padding: 4rem;
+            }
+            
+            .content-container {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: "header header header" "person1 person2 person3" "footer person4 person5";
+            }
+
+            footer {
+                min-height: 0;
+            }
+        }
+        
+        @media screen and (min-width: 1024px) {
+            .content-container {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:"header header person1 person2" "footer person3 person4 person5";
+            }
+        }
     </style>
     
     <title>Our Team</title>
@@ -163,7 +206,7 @@
                 <img src="./resources/person_3.png" alt="person_3" class="person">
                 <img src="./resources/Gradient.svg" alt="gradient" class="gradient" >
                 <figcaption>
-                    <h4>Ethan ROssi</h4>
+                    <h4>Ethan Rossi</h4>
                     <p>Business Development Manager</p>
                 </figcaption>
             </figure>
@@ -184,7 +227,10 @@
                 </figcaption>
             </figure>
             <footer>
-                <p>See all members</p>
+                <div class="see-all-btn">
+                    <p>See all members</p>
+                    <img src="./resources/arrow up right.svg" alt="arrow-up-right">
+                </div>
             </footer>
         </section>
     </section>
